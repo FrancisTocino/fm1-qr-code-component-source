@@ -1,0 +1,29 @@
+
+//App dimension
+$Appwidth: 100%;
+$Appheight: 800px;
+
+//App Background
+$AppBackground : hsl(212, 45%, 89%);
+
+
+html,body {
+  margin:0;border:0;padding:0;
+  background-color: $AppBackground;
+  background-size: contain,cover;
+}
+
+
+
+//Align
+.App {
+  min-width:$Appwidth;
+  min-height:$Appheight;
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+

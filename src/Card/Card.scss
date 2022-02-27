@@ -1,0 +1,62 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+//Colors
+$White: hsl(0, 0%, 100%);
+$Lightgray: hsl(212, 46%, 89%);
+$Grayishblue: hsl(220, 15%, 55%);
+$Darkblue: hsl(218, 44%, 22%);
+
+//Typography
+$fontSizePahagraph: 15px;
+
+//Media query for card´s width
+@media screen and (max-width: 375px) {  // MObile
+    .main-box {
+        width: 320px;
+        height: 500px;
+    }
+   }
+@media screen  and (min-width:375px)  {  // Desktop
+     .main-box {
+         width: 290px;
+         height: 450px;
+     }
+   }
+
+.main-box {
+    box-sizing: border-box;
+    padding:15px;
+    border-radius: 15px;
+    background-color:$White;
+    box-shadow: 2px 2px 18px #d0dcea;
+    .box1{
+        box-sizing: border-box;
+        border-radius: 15px;
+        width: auto;
+        height: 60%;
+        padding:40px;
+        background-image: url('./images/image-qr-code.png');
+        background-size: cover;
+    }
+
+    .box2{
+        font-family: Outfit, Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        width: auto;
+        height: 50%;
+        padding: 10px 25px;
+        text-align: center;
+        :nth-child(1) {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        :nth-last-child(1){
+            color:$Grayishblue;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
